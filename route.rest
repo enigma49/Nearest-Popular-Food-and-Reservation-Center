@@ -1,0 +1,14 @@
+GET http://localhost:3000/saveEat/
+
+#########
+
+POST http://localhost:3000/saveEat/food/add
+
+
+{
+    "name":"Chicken Biryani",
+    "area":"Mahim",
+    "lat": 19.0354,
+    "long":72.8423,
+    "foodType": "non-veg"
+}
