@@ -78,7 +78,7 @@ GET /getPopularFood?lat=19.0269&long=72.8553
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `lat and long` | `Query Values` | his API takes lat long in query and returns all the popular foods in nearest to that location |
+| `lat and long` | `Query Values` | This API takes lat long in query and returns all the popular foods in nearest to that location |
 
 
 #### Get Neares Reservation Center that has the given Food Items
