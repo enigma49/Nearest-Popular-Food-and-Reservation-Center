@@ -1,6 +1,7 @@
 # Nearest-Popular-Food-and-Reservation-Center
 This api allows you to get data of your nearest popular food and Reservation Centres.
 
+You need to create an env file using the env.example file.
 
 ## API Reference
 #### Base URL of the APIs is http://localhost:3000/saveEat/
