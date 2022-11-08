@@ -98,6 +98,7 @@ router.post("/reservationCenter/add", async (req, res) => {
   }
 });
 
+//API To get Nearby Popular Food
 router.get("/getPopularFood", async (req, res) => {
   let { lat, long } = req.query;
   let maxDistance = 1000; //Max Distance is the radius in which we are getting the data
@@ -124,8 +125,9 @@ router.get("/getPopularFood", async (req, res) => {
   }
 });
 
+//API To get Nearby Reservation centers
 router.get("/getReservationCenter", async (req, res) => {
-  let { lat, long, foodName } = req.query;
+  let { lat, long } = req.query;
   let maxDistance = 1000; //Max Distance is the radius in which we are getting the data
   try {
     const reservationCenter = await ReservationCenterSchema.aggregate([
@@ -136,7 +138,6 @@ router.get("/getReservationCenter", async (req, res) => {
             coordinates: [parseFloat(long), parseFloat(lat)],
           },
           key: "location",
-          query: { "availableFood.foodName": foodName },
           maxDistance: parseFloat(maxDistance) * 1609,
           distanceField: "distanceCalculated",
           spherical: true,
