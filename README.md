@@ -85,9 +85,9 @@ GET /getPopularFood?lat=19.0269&long=72.8553
 #### Get Neares Reservation Center that has the given Food Items
 
 ```http
-GET /getReservationCenter?lat=19.0269&long=72.8553&foodName=Chicken Biryani
+GET /getReservationCenter?lat=19.0269&long=72.8553
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `lat, long and foodName` | `Query Values` | This API takes in lat long and foodName and returns the data of the nearest reservation center that has that food item. It also returns the quantity of the food item and other details necessary to ensure a seamless booking |
+| `lat, long` | `Query Values` | This API takes in lat long and foodName and returns the data of the nearest reservation center that has that food item. It also returns the quantity of the food item and other details necessary to ensure a seamless booking |
 
